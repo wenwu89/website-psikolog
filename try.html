@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psikolog Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .question-box {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-box p {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .question-box label {
+            display: block;
+            margin-left: 15px;
+        }
+
+        form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+        }
+
+        form button:hover {
+            background: #45a049;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 15px;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Psikolog Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tes">Tes Psikologi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="beranda">
+        <h2>Selamat Datang di Layanan Psikologi Online</h2>
+        <p>Kami menyediakan layanan tes psikologi secara online.</p>
+    </section>
+    
+    
+    <section id="tes">
+        <h2>Tes Psikologi</h2>
+        <form id="testForm">
+            <div class="question-box">
+                <p>1. Saya merasa dosen saya memberikan pengaruh terhadap keberhasilan dalam studi saya.</p>
+                <label><input type="radio" name="q1" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q1" value="4"> Setuju</label>
+                <label><input type="radio" name="q1" value="3"> Netral</label>
+                <label><input type="radio" name="q1" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q1" value="1"> Sangat Tidak Setuju</label>
+            </div>
+            
+            <div class="question-box">
+                <p>2. Keberhasilan saya dalam kuliah dikarenakan orang tua saya mendukung studi saya.</p>
+                <label><input type="radio" name="q2" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q2" value="4"> Setuju</label>
+                <label><input type="radio" name="q2" value="3"> Netral</label>
+                <label><input type="radio" name="q2" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q2" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>3. Saya bergantung pada orang lain untuk menentukan pilihan hidup saya.</p>
+                <label><input type="radio" name="q3" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q3" value="4"> Setuju</label>
+                <label><input type="radio" name="q3" value="3"> Netral</label>
+                <label><input type="radio" name="q3" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q3" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>4. Keberhasilan  kuliah saya sepenuhnya tidak bergantung pada siapapun, namun kendali atas diri saya sendiri.</p>
+                <label><input type="radio" name="q4" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q4" value="4"> Setuju</label>
+                <label><input type="radio" name="q4" value="3"> Netral</label>
+                <label><input type="radio" name="q4" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q4" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>5. Pilihan hidup saya ditentukan oleh tindakan-tindakan saya sendiri.</p>
+                <label><input type="radio" name="q5" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q5" value="4"> Setuju</label>
+                <label><input type="radio" name="q5" value="3"> Netral</label>
+                <label><input type="radio" name="q5" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q5" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>6. Saya menyalahkan orang lain atas kegagalan yang saya alami.</p>
+                <label><input type="radio" name="q6" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q6" value="4"> Setuju</label>
+                <label><input type="radio" name="q6" value="3"> Netral</label>
+                <label><input type="radio" name="q6" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q6" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>7. Saya dapat menempuh Pendidikan tinggi dikarenakan saya memiliki kesempatan tersebut yang mana tidak dimiliki semua orang.</p>
+                <label><input type="radio" name="q7" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q7" value="4"> Setuju</label>
+                <label><input type="radio" name="q7" value="3"> Netral</label>
+                <label><input type="radio" name="q7" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q7" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>8. Ketika saya memperoleh ipk yang baik biasanya karena saya beruntung.</p>
+                <label><input type="radio" name="q8" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q8" value="4"> Setuju</label>
+                <label><input type="radio" name="q8" value="3"> Netral</label>
+                <label><input type="radio" name="q8" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q8" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>9. Saya berani menanggung resiko jika saya mengalami kegagalan.</p>
+                <label><input type="radio" name="q9" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q9" value="4"> Setuju</label>
+                <label><input type="radio" name="q9" value="3"> Netral</label>
+                <label><input type="radio" name="q9" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q9" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>10. Saya bertanggung jawab atas setiap Tindakan yang saya lakukan.</p>
+                <label><input type="radio" name="q10" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q10" value="4"> Setuju</label>
+                <label><input type="radio" name="q10" value="3"> Netral</label>
+                <label><input type="radio" name="q10" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q10" value="1"> Sangat Tidak Setuju</label>
+            </div>
+
+            <div class="question-box">
+                <p>11. Saya harus menanggung semua kesalahan, apa yang saya perbuat, karena saran dari orang lain.</p>
+                <label><input type="radio" name="q11" value="5"> Sangat Setuju</label>
+                <label><input type="radio" name="q11" value="4"> Setuju</label>
+                <label><input type="radio" name="q11" value="3"> Netral</label>
+                <label><input type="radio" name="q11" value="2"> Tidak Setuju</label>
+                <label><input type="radio" name="q11" value="1"> Sangat Tidak Setuju</label>
+            </div>
+            
+            <button type="submit">Kirim</button>
+        </form>
+        <p id="result"></p>
+    </section>
+    
+    <section id="kontak">
+        <h2>Hubungi Kami</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById("testForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let score1 = parseInt(document.querySelector("input[name='q1']:checked").value);
+            let score2 = parseInt(document.querySelector("input[name='q2']:checked").value);
+            let score3 = parseInt(document.querySelector("input[name='q3']:checked").value);
+            let score4 = parseInt(document.querySelector("input[name='q4']:checked").value);
+            let score5 = parseInt(document.querySelector("input[name='q5']:checked").value);
+            let score6 = parseInt(document.querySelector("input[name='q6']:checked").value);
+            let score7 = parseInt(document.querySelector("input[name='q7']:checked").value);
+            let score8 = parseInt(document.querySelector("input[name='q8']:checked").value);
+            let score9 = parseInt(document.querySelector("input[name='q9']:checked").value);
+            let score10 = parseInt(document.querySelector("input[name='q10']:checked").value);
+            let score11 = parseInt(document.querySelector("input[name='q11']:checked").value);
+            let totalScore = score1 + score2 + score3 + score4 + score5 + score6 + score7 + score8 +score9 + score10 + score11;
+            let resultText = "";
+            
+            if (totalScore >= 55) {
+                resultText = "Anda mungkin mengalami tingkat stres yang tinggi. Pertimbangkan konsultasi dengan psikolog.";
+            } else if (totalScore >= 33) {
+                resultText = "Kondisi Anda sedang, namun tetap penting untuk menjaga kesehatan mental.";
+            } else if (totalScore >=15) { 
+                resultText = "Kondisi Anda terlihat stabil, namun konsultasi tetap bisa membantu.";
+            }
+            
+            document.getElementById("result").textContent = resultText;
+        });
+    </script>
+</body>
+</html>
