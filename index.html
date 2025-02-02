@@ -128,20 +128,20 @@
 
             <div class="question-box">
                 <p>3. Saya bergantung pada orang lain untuk menentukan pilihan hidup saya.</p>
-                <label><input type="radio" name="q3" value="5"> Sangat Setuju</label>
-                <label><input type="radio" name="q3" value="4"> Setuju</label>
+                <label><input type="radio" name="q3" value="1"> Sangat Setuju</label>
+                <label><input type="radio" name="q3" value="2"> Setuju</label>
                 <label><input type="radio" name="q3" value="3"> Netral</label>
-                <label><input type="radio" name="q3" value="2"> Tidak Setuju</label>
-                <label><input type="radio" name="q3" value="1"> Sangat Tidak Setuju</label>
+                <label><input type="radio" name="q3" value="4"> Tidak Setuju</label>
+                <label><input type="radio" name="q3" value="5"> Sangat Tidak Setuju</label>
             </div>
 
             <div class="question-box">
                 <p>4. Keberhasilan  kuliah saya sepenuhnya tidak bergantung pada siapapun, namun kendali atas diri saya sendiri.</p>
-                <label><input type="radio" name="q4" value="5"> Sangat Setuju</label>
-                <label><input type="radio" name="q4" value="4"> Setuju</label>
+                <label><input type="radio" name="q4" value="1"> Sangat Setuju</label>
+                <label><input type="radio" name="q4" value="2"> Setuju</label>
                 <label><input type="radio" name="q4" value="3"> Netral</label>
-                <label><input type="radio" name="q4" value="2"> Tidak Setuju</label>
-                <label><input type="radio" name="q4" value="1"> Sangat Tidak Setuju</label>
+                <label><input type="radio" name="q4" value="4"> Tidak Setuju</label>
+                <label><input type="radio" name="q4" value="5"> Sangat Tidak Setuju</label>
             </div>
 
             <div class="question-box">
@@ -155,11 +155,11 @@
 
             <div class="question-box">
                 <p>6. Saya menyalahkan orang lain atas kegagalan yang saya alami.</p>
-                <label><input type="radio" name="q6" value="5"> Sangat Setuju</label>
-                <label><input type="radio" name="q6" value="4"> Setuju</label>
+                <label><input type="radio" name="q6" value="1"> Sangat Setuju</label>
+                <label><input type="radio" name="q6" value="2"> Setuju</label>
                 <label><input type="radio" name="q6" value="3"> Netral</label>
-                <label><input type="radio" name="q6" value="2"> Tidak Setuju</label>
-                <label><input type="radio" name="q6" value="1"> Sangat Tidak Setuju</label>
+                <label><input type="radio" name="q6" value="4"> Tidak Setuju</label>
+                <label><input type="radio" name="q6" value="5"> Sangat Tidak Setuju</label>
             </div>
 
             <div class="question-box">
@@ -200,11 +200,11 @@
 
             <div class="question-box">
                 <p>11. Saya harus menanggung semua kesalahan, apa yang saya perbuat, karena saran dari orang lain.</p>
-                <label><input type="radio" name="q11" value="5"> Sangat Setuju</label>
-                <label><input type="radio" name="q11" value="4"> Setuju</label>
+                <label><input type="radio" name="q11" value="1"> Sangat Setuju</label>
+                <label><input type="radio" name="q11" value="2"> Setuju</label>
                 <label><input type="radio" name="q11" value="3"> Netral</label>
-                <label><input type="radio" name="q11" value="2"> Tidak Setuju</label>
-                <label><input type="radio" name="q11" value="1"> Sangat Tidak Setuju</label>
+                <label><input type="radio" name="q11" value="4"> Tidak Setuju</label>
+                <label><input type="radio" name="q11" value="5"> Sangat Tidak Setuju</label>
             </div>
             
             <button type="submit">Kirim</button>
@@ -242,12 +242,12 @@
             let totalScore = score1 + score2 + score3 + score4 + score5 + score6 + score7 + score8 +score9 + score10 + score11;
             let resultText = "";
             
-            if (totalScore >= 55) {
-                resultText = "Anda mungkin mengalami tingkat stres yang tinggi. Pertimbangkan konsultasi dengan psikolog.";
+            if (totalScore >= 45) {
+                resultText = "Locus of control anda tinggi, artinya Anda memiliki keyakinan yang kuat terhadap kendali atas hidup Anda ";
             } else if (totalScore >= 33) {
-                resultText = "Kondisi Anda sedang, namun tetap penting untuk menjaga kesehatan mental.";
+                resultText = "Locus of control anda sedang, artinya Anda percaya bahwa usaha dan keputusan Anda berpengaruh terhadap hidup, tetapi juga menyadari bahwa faktor eksternal seperti keberuntungan, lingkungan, atau orang lain juga berperan.";
             } else if (totalScore >=15) { 
-                resultText = "Kondisi Anda terlihat stabil, namun konsultasi tetap bisa membantu.";
+                resultText = "Locus of control anda rendah, artinya Anda mungkin merasa kurang percaya diri terhadap kemampuan Anda dalam mengendalikan hidup, sering merasa pasrah, dan mudah menyerah jika menghadapi kesulitan.";
             }
             
             document.getElementById("result").textContent = resultText;
